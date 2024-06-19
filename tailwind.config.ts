@@ -8,6 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'slide-in': {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
+        }
+      },
+      animation: {
+        'slide-in': 'slide-in 0.3s ease-out forwards',
+      },
+      transformOrigin: {
+        'left': 'left',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
