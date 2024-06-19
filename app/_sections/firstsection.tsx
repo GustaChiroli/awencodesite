@@ -5,7 +5,9 @@ const FirstSession = () => {
     return (
         <div className="w-full h-screen bg-background">
             <div className="h-full flex justify-center items-center">
-                <div className="w-fit h-fit">
+                <div className="w-fit h-fit relative">
+                    {/* Imagem giratoria */}
+                    <Image className={`${styles.spin_animation} ${styles.appear_animation} absolute -top-[15%] left-[10px]`} src='/images/firstsection/02.svg' alt="02" width={85} height={85} />
                     {/* Texto */}
                     <div className="h-fit text-center flex overflow-hidden justify-center mr-10">
                         <h1 className={`${styles.animate_slide_up} ${styles.delay_0} text-8xl font-extrabold`}>M</h1>
@@ -42,7 +44,7 @@ const FirstSession = () => {
                 </div>
                 <div className="flex relative w-[35%] h-[70%] overflow-hidden">
                     {/* Imagem */}
-                    <Image className={`${styles.animate_slide_down} ${styles.delay_24}`} src='/images/firstsection/01.png' alt="imagem 01" fill />
+                    <Image className={`${styles.animate_slide_down} ${styles.delay_24}`} objectFit="cover" src='/images/firstsection/01.png' alt="imagem 01" fill />
                 </div>
                 <div>
                     {/* Menu lateral direito */}

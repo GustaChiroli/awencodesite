@@ -132,3 +132,34 @@
 .delay_24 {
     animation-delay: 1s;
 }
+
+@keyframes appearFromCenter {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.appear_animation {
+    animation: appearFromCenter 1s ease-out 0.2s forwards;
+    /* forwards mantém o último quadro da animação */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spin_animation {
+    animation: spin 15s linear infinite;
+}
